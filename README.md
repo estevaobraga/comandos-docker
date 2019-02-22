@@ -13,11 +13,11 @@ Pesquise imagens em: https://hub.docker.com/
 `docker run -p porta_ip_host:porta_ip_container --name nome -d imagem`
 
 #### Rodar MySQL em um container
-`docker run --name BaseMySQL -e MYSQL_ROOT_PASSWORD=senha -p 3306:3306 -d mysql`
-_-d: roda em backgroud_
-_-p: configuração de exposição da porta ip_
-_-e: configurações de variável_
-_-t: modo interativo_
+`docker run --name BaseMySQL -e MYSQL_ROOT_PASSWORD=senha -p 3306:3306 -d mysql`  
+_-d: roda em backgroud_  
+_-p: configuração de exposição da porta ip_  
+_-e: configurações de variável_  
+_-t: modo interativo_  
 #### Manipulando containers
 -   Listar Containers rodando  
 `docker ps`
