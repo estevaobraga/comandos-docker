@@ -1,0 +1,12 @@
+version: "3"
+services:
+    sql-server:
+        image: microsoft/mssql-server-linux
+        container_name: sql-server
+        restart: "always"
+        ports:
+            - "1433:1433"
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=sa@123
+        
