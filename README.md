@@ -2,11 +2,11 @@
 Copilado de comandos para manipulação de containers docker
 
 #### Hello docker
-Testando o ambiente, um exemplo mínimo.
+Testando o ambiente, um exemplo mínimo.  
 `docker run hello-world`
 
 #### Baixar uma imagem
-Pesquise imagens em: https://hub.docker.com/
+Pesquise imagens em: https://hub.docker.com/  
 `docker pull nome_imagem`
 
 #### Criar um container
