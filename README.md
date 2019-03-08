@@ -7,10 +7,10 @@ Testando o ambiente, um exemplo mínimo.
 
 #### Baixar uma imagem
 Pesquise imagens em: https://hub.docker.com/  
-`docker pull nome_imagem`
+`docker pull <imagem>`
 
 #### Criar um container
-`docker run -p porta_ip_host:porta_ip_container --name nome -d imagem`
+`docker run -p <porta_ip_host>:<porta_ip_container> --name nome -d imagem`
 
 #### Rodar MySQL em um container
 `docker run --name BaseMySQL -e MYSQL_ROOT_PASSWORD=senha -p 3306:3306 -d mysql`  
@@ -24,13 +24,15 @@ _-t: modo interativo_
 -   Listar containers parados  
 `docker ps -f "status=exited"`
 -   Parar um container  
-`docker stop nome ou id_container`
+`docker stop <nome ou id container>`
 -   Excluir um container  
 `docker rm nome ou id_container`
 -   Excluir todos os containers  
 `docker rm -f $(docker ps -aq)`
 -   Acessar terminal do container  
-`docker exec -it nome_container bash`
+`docker exec -it <nome container> bash`
+-   Visualizar logs de um container  
+`docker logs -f <container>`
 #### Manipular imagens docker
 -   Salvar imagem, criar arquivo  
 `docker save -o imagem.docker imagem`
