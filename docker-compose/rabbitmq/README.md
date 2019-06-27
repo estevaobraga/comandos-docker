@@ -3,6 +3,9 @@
 
 
 
-Comando para iniciar serviço    
-
-`docker-compose up`
+Comando para iniciar serviço  
+`docker-compose up`  
+Endereço  
+`http://localhost:15672`  
+- Usuario: `guest`  
+- Password: `guest`  
