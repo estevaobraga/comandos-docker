@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+    postgres:
+        image: postgres
+        container_name: mp-postgres
+        restart: "no"
+        ports:
+            - "5432:5432"
+        networks:
+            - "postgres-network"
+        environment:
+            - POSTGRES_USER=saj
+            - POSTGRES_PASSWORD=agesune1
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: mp-pgadmin
+        restart: "no"
+        ports:
+            - "15432:80"
+        networks:
+            - "postgres-network"
+        volumes:
+          - C:\Backup:/var/lib/pgadmin/storage/admin/backup/
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=admin
+            - PGADMIN_DEFAULT_PASSWORD=password
+networks: 
+     postgres-network: 
+       name: postgres
+       driver: bridge
