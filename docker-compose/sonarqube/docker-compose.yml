@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+    sql-server:
+        image: sonarqube:latest
+        container_name: sonarlocalscanner
+        restart: "no"
+        ports:
+            - "9000:9000"
+        
